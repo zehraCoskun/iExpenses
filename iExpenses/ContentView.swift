@@ -35,6 +35,7 @@ struct ContentView: View {
                         showingSheet = true
                     } label: {
                         Image(systemName: "plus")
+                            .foregroundColor(Color.black)
                     }
                 } .sheet(isPresented: $showingSheet) {
                     AddView(expenses: expenses)
